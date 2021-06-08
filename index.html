@@ -14,14 +14,11 @@
     }
     
     function moveRedirect() {
-      alert("aaaa");
+      var state = getParameterByName('state');
+      var api_tran_id = getParameterByName('api_tran_id');
+      var redirect_uri = getParameterByName('redirect_uri');
+      window.location.href = redirect_uri + "?code=new_code&state=" + state + "&api_tran_id=" + api_tran_id; 
     }
-    var state = getParameterByName('state');
-    var redirect_uri  = getParameterByName('redirect_uri');
-    
-    alert(state);
-    alert(redirect_uri);
-    
   </script>
 </head>
 <body>
