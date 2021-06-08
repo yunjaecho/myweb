@@ -1,3 +1,26 @@
+<!DOCTYPE html>
 <html>
-  <body>1111111</body>
+<head>
+  <meta charset="UTF-8">
+  <title>신한은행 마이데이터 개별인증-001(인증URI)</title>
+  <script>
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      var results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    var state = getParameterByName('state');
+    var redirect_uri  = getParameterByName('redirect_uri ');
+    
+    alert(state);
+    alert(redirect_uri);
+    
+  </script>
+</head>
+<body>
+  
+</body>
 </html>
