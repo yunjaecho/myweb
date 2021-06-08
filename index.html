@@ -12,6 +12,10 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
+    
+    function moveRedirect() {
+      alert("aaaa");
+    }
     var state = getParameterByName('state');
     var redirect_uri  = getParameterByName('redirect_uri');
     
@@ -21,6 +25,6 @@
   </script>
 </head>
 <body>
-  
+  <button onclick=moveRedirect()>수집AP Redirect URI 이동</button>
 </body>
 </html>
