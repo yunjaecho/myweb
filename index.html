@@ -22,7 +22,8 @@
       console.log("api_tran_id :  " + api_tran_id);
       console.log("redirect_uri :  " + redirect_uri);
       
-      window.location.href = redirect_uri + "?code=new_code&state=" + state + "&api_tran_id=" + api_tran_id; 
+//       window.location.href = redirect_uri + "?code=new_code&state=" + state + "&api_tran_id=" + api_tran_id; 
+      window.location.href = redirect_uri + "?code=" state + "&state=" + state + "&api_tran_id=" + api_tran_id; 
     }
   </script>
 </head>
